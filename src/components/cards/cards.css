@@ -1,0 +1,12 @@
+.contentCardsView {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  /* flex-direction: row; */
+}
+
+.test1 {
+  width: 100vw;
+  display: flex;
+}
