@@ -1,0 +1,92 @@
+.prueba2 {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.contentCardTitle {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.titleCard {
+  margin-top: 20px;
+  display: flex;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: rgb(5, 121, 199);
+  text-shadow: 1px 1px #000, 1px 1px #000;
+}
+
+.ciudadContent {
+  display: flex;
+}
+
+.ciudadLeft {
+  /* flex: 50; */
+  margin: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.ciudadRight {
+  /* flex: 50; */
+  margin: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.descriptionCard {
+  /* display: block; */
+  margin: 2px auto;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.btnCiudad {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btnCiudad:hover {
+  background: rgb(5, 121, 199);
+  color: #fff;
+  transition: 800ms;
+}
+
+@media screen and (max-width: 600px) {
+  .prueba2 {
+    margin: 0 auto;
+    min-width: 400;
+  }
+  .ciudadContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .descriptionCard {
+    margin: 2px auto;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+  .btnCiudad {
+  }
+}

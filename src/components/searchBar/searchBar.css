@@ -2,6 +2,13 @@
   margin: 3px;
   border: 1px solid white;
   border-radius: 4px;
+  outline: none;
+}
+
+.inputSearch::placeholder {
+  color: rgb(5, 121, 199);
+  font-size: 20px;
+  padding: 5px;
 }
 
 .btnInput {
@@ -15,7 +22,7 @@
 }
 
 .btnInput:hover {
-  color: #55f;
+  color: rgb(5, 121, 199);
   background: #fff;
   font-weight: 500;
   transition: 800ms;

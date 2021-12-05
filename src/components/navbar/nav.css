@@ -1,20 +1,61 @@
 #logoHenry {
+  display: inline-block;
   margin-top: 10px;
   margin-right: 20px;
 }
 
 .top {
   display: flex;
-  justify-content: space-between;
-  background: #55f;
+  justify-content: center;
+  /* background: #55f; */
+  background: rgb(17, 145, 230);
+  position: sticky;
+  top: 0;
   opacity: 0.7;
+  z-index: 99;
 }
 
 .henry {
+  display: inline-block;
   margin-left: 10px;
   margin-top: 10px;
 }
 
 .link {
+  align-items: center;
+  align-items: center;
+}
+
+.topLeft {
+  margin-left: 10px;
   display: flex;
+}
+
+.liItems {
+  margin: 5px;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.imgTopBar {
+  margin-top: -15px;
+}
+
+@media screen and (max-width: 600px) {
+  .link {
+    display: none;
+  }
+
+  .stop {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .topRight {
+    display: flex;
+    justify-content: end;
+  }
 }
