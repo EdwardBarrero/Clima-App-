@@ -15,7 +15,6 @@ function App() {
         const citiesStorage = JSON.parse(window.localStorage.getItem(localStorageKey))
         setCities(citiesStorage)
     }
-
     useEffect(() => {
         citiesSaveLocalStorage()
     }, [])
@@ -24,10 +23,10 @@ function App() {
         window.localStorage.setItem('citieSave', JSON.stringify(cities))
     }, [cities])
 
-    function onSearch(ciudad) {
+    const onSearch = async (ciudad) => {
         //Llamado a la API del clima
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`)
-            .then(r => r.json())
+        const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`)
+        const data = await response.json()
             .then((recurso) => {
                 console.log(recurso)
                 if (recurso.main !== undefined) {
@@ -70,6 +69,7 @@ function App() {
                     });
                 }
             });
+        return data
     }
 
     function onClose(id) {
